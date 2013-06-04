@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16.02.2013 07:43:21 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="model.Person" table="PERSON">
+		<id name="id" type="int">
+			<column name="ID"/>
+			<generator class="increment"/>
+		</id>
+		<property generated="never" lazy="false" name="type" type="java.lang.String">
+			<column name="type"/>
+		</property>
+		<property generated="never" lazy="false" name="title" type="java.lang.String">
+			<column name="title"/>
+		</property>
+		<property generated="never" lazy="false" name="album" type="???">
+			<column name="album"/>
+		</property>
+		<property generated="never" lazy="false" name="interpret" type="java.lang.String">
+			<column name="interpret"/>
+		</property>
+		<property generated="never" lazy="false" name="duration" type="double">
+			<column name="duration"/>
+		</property>
+		<property generated="never" lazy="false" name="size" type="int">
+			<column name="size"/>
+		</property>
+		<property generated="never" lazy="false" name="filePath" type="java.lang.String">
+			<column name="filePath"/>
+		</property>
+		<property generated="never" lazy="false" name="listened" type="int">
+			<column name="listened"/>
+		</property>
+		<property generated="never" lazy="false" name="bought" type="int">
+			<column name="bought"/>
+		</property>
+	</class>
+</hibernate-mapping>
